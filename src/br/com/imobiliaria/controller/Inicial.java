@@ -12,7 +12,6 @@ public class Inicial extends Application {
         // chama o start
         launch(args);
     }
-
     @Override
     // start, faz o link desse esquema. Pegar o layout e jogar na raiz -> nó -> palco
     public void start(Stage stage) throws Exception {
@@ -41,3 +40,4 @@ public class Inicial extends Application {
         stage.show();
     }
 }
+
