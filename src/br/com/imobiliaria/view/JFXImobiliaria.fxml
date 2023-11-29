@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #bde0fe;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.imobiliaria.controller.JFXImobiliaria">
+   <children>
+      <Label layoutX="-1.0" prefHeight="87.0" prefWidth="624.0" style="-fx-background-position: center; -fx-background-color: #cdb4db;" text="                         Imobiliaria" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="108.0" prefHeight="17.0" prefWidth="66.0" text="Proprietário" />
+      <Label layoutX="91.0" layoutY="177.0" prefHeight="17.0" prefWidth="43.0" text="Cidade" />
+      <Label layoutX="94.0" layoutY="258.0" text="Área do imóvel" />
+      <TextField fx:id="tfProprietario" layoutX="91.0" layoutY="135.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField fx:id="tfCidade" layoutX="91.0" layoutY="210.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField fx:id="tfArea" editable="false" layoutX="91.0" layoutY="292.0" prefHeight="25.0" prefWidth="250.0" />
+      <Label layoutX="406.0" layoutY="108.0" text="Calcular área do terreno">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="bQuadrado" layoutX="420.0" layoutY="173.0" mnemonicParsing="false" onAction="#calcularQuadrado" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffc8dd;" text="Quadrado" textFill="#5b0826" />
+      <Button fx:id="bRetangulo" layoutX="420.0" layoutY="135.0" mnemonicParsing="false" onAction="#calcularRetangulo" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffc8dd;" text="Retângulo" textFill="#5b0826" />
+      <Button fx:id="bTriangulo" layoutX="420.0" layoutY="210.0" mnemonicParsing="false" onAction="#calcularTriangulo" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffc8dd;" text="Triângulo" textFill="#5b0826" />
+      <Button fx:id="bCirculo" layoutX="420.0" layoutY="249.0" mnemonicParsing="false" onAction="#calcularCirculo" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffc8dd;" text="Círculo" textFill="#5b0826" />
+      <Button fx:id="bLosango" layoutX="420.0" layoutY="289.0" mnemonicParsing="false" onAction="#calcularLosango" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffc8dd;" text="Losango" textFill="#5b0826" />
+      <Button fx:id="bSalvar" layoutX="157.0" layoutY="352.0" mnemonicParsing="false" onAction="#salvar" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #00b4d8;" text="Salvar" textFill="#caf0f8" />
+      <Button fx:id="bFechar" layoutX="380.0" layoutY="352.0" mnemonicParsing="false" onAction="#fechar" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #00b4d8;" text="Sair" textFill="#caf0f8" />
+   </children>
+</AnchorPane>
